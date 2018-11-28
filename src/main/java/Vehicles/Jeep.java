@@ -6,5 +6,5 @@ public class Jeep extends Vehicle {
         super(make, model, numberOfSeats, price, damage);
     }
 
-    
+
 }

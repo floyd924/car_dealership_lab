@@ -1,40 +1,40 @@
-import Vehicles.Jeep;
+import Vehicles.Van;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class JeepTest {
+public class VanTest {
 
-    Jeep jeep;
+    Van van;
 
     @Before
     public void setup(){
-        jeep = new Jeep("Ford", "Explorer", 7, 50000, 2300);
+        van = new Van("Mercedes", "Sprinter", 3, 12000, 8000);
     }
 
     @Test
     public void hasMake(){
-        assertEquals("Ford", jeep.getMake());
+        assertEquals("Mercedes", van.getMake());
     }
 
     @Test
     public void hasModel(){
-        assertEquals("Explorer", jeep.getModel());
+        assertEquals("Sprinter", van.getModel());
     }
 
     @Test
     public void hasNumberOfSeats(){
-        assertEquals(7, jeep.getNumberOfSeats());
+        assertEquals(3, van.getNumberOfSeats());
     }
 
     @Test
     public void hasPrice(){
-        assertEquals(50000, jeep.getPrice());
+        assertEquals(12000, van.getPrice());
     }
 
     @Test
     public void hasDamage(){
-        assertEquals(2300, jeep.getDamage());
+        assertEquals(8000, van.getDamage());
     }
 }
