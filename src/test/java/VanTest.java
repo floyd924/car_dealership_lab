@@ -37,4 +37,14 @@ public class VanTest {
     public void hasDamage(){
         assertEquals(8000, van.getDamage());
     }
+
+    @Test
+    public void canTow(){
+        assertEquals("Van is now towing a caravan", van.tow("caravan"));
+    }
+
+    @Test
+    public void canDrive(){
+        assertEquals("chuggachuggachugga", van.drive());
+    }
 }

@@ -37,4 +37,14 @@ public class JeepTest {
     public void hasDamage(){
         assertEquals(2300, jeep.getDamage());
     }
+
+    @Test
+    public void canTow(){
+        assertEquals("Now towing a horsebox", jeep.tow("horsebox"));
+    }
+
+    @Test
+    public void canDrive(){
+        assertEquals("brrmm", jeep.drive());
+    }
 }

@@ -37,4 +37,14 @@ public class CarTest {
     public void hasDamage(){
         assertEquals(0, car.getDamage());
     }
+
+    @Test
+    public void canDrive(){
+        assertEquals("brum brum", car.drive());
+    }
+
+    @Test
+    public void hasMaxSpeed(){
+        assertEquals(150, car.maxSpeed());
+    }
 }
